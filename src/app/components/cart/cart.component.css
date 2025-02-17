@@ -1,0 +1,15 @@
+img {
+    width: 5vw;
+    height: auto;
+    border: solid;
+}
+
+table {
+    width: 47vw;
+    table-layout: auto;
+}
+
+table tr, table td {
+    border: solid darkblue;
+    text-align: center;
+}

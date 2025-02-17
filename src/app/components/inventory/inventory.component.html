@@ -1,0 +1,18 @@
+<h1>Please Select</h1>
+
+<table>
+    @for (d of descs; let i = $index; track i) {
+        <tr>
+            <td>
+                <img [src]="images[i]">
+            </td>
+            <td>
+                <div [innerText]="d"></div>
+                <div>Unit Price: <span [innerText]="prices[i]"></span></div>
+            </td>
+            <td>
+                <button type="button" (click)="addToCart(i)">Add</button>
+            </td>
+        </tr>
+    }
+</table>
